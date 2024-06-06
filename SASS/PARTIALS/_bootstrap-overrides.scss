@@ -3,6 +3,10 @@
 @import "../../BOOTSTRAP/scss/mixins/banner";
 
 
+//-------------------------------------------ESERCIZIO 5----------------------------------------------------------------------//
+$btn-padding-y: 0.75rem;
+$btn-padding-x: 2.5rem;
+
 // 2. Include any default variable overrides here
 @import "../../BOOTSTRAP/scss/variables";
 @import "../../BOOTSTRAP/scss/variables-dark";
@@ -55,6 +59,7 @@ $border-with : map-merge($map1:$border-with , $map2:$custom-border-with)
 /* BOOTSTRAP */ ;
 
 //-------------------------------------------ESERCIZIO 4----------------------------------------------------------------------//
+
 
 
 
