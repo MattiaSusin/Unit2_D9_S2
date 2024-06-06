@@ -1,24 +1,76 @@
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
 @import "../../BOOTSTRAP/scss/functions";
 @import "../../BOOTSTRAP/scss/mixins/banner";
-/* @include bsBanner("");
- */
 
-// scss-docs-start import-stack
-// Configuration
 
+// 2. Include any default variable overrides here
 @import "../../BOOTSTRAP/scss/variables";
 @import "../../BOOTSTRAP/scss/variables-dark";
+
+// 4. Include any default map overrides here
+
+//-------------------------------------------ESERCIZIO 1----------------------------------------------------------------------//
+$font-sizes: (
+    1: 6rem,
+    2: 5rem,
+    3: 4rem,
+    4: 3rem,
+    5: 2rem,
+    6: 1rem,
+);
+
+$custom-font-sizes: (
+    7: 0.875rem,
+    8: 0.75rem,
+    9: 0.625rem,
+    10: 0.5rem
+);
+
+
+$font-sizes: map-merge($map1: $font-sizes , $map2:$custom-font-sizes)
+
+//-------------------------------------------ESERCIZIO 2----------------------------------------------------------------------//
+$border-with:(
+
+    1: 1px,
+    2: 2px,
+    3: 3px,
+    4: 4px,
+    5: 5px,
+
+);
+
+$custom-border-with: (
+
+    6: 6px,
+    7: 7px,
+    8: 8px,
+    9: 9px,
+    10: 10px,
+);
+
+$border-with : map-merge($map1:$border-with , $map2: $custom-border-with)
+
+// 5. Include remainder of required parts
 @import "../../BOOTSTRAP/scss/maps";
 @import "../../BOOTSTRAP/scss/mixins";
-@import "../../BOOTSTRAP/scss/utilities";
+@import "../../BOOTSTRAP/scss/root";
+
 
 // Layout & components
-@import "../../BOOTSTRAP/scss/root";
+// 6. Optionally include any other parts as needed
+@import "../../BOOTSTRAP/scss/utilities";
 @import "../../BOOTSTRAP/scss/reboot";
 @import "../../BOOTSTRAP/scss/type";
 @import "../../BOOTSTRAP/scss/images";
 @import "../../BOOTSTRAP/scss/containers";
 @import "../../BOOTSTRAP/scss/grid";
+@import "../../BOOTSTRAP/scss/helpers";
+
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in _utilities.scss
+@import "../../BOOTSTRAP/scss/utilities/api";
+
 @import "../../BOOTSTRAP/scss/tables";
 @import "../../BOOTSTRAP/scss/forms";
 @import "../../BOOTSTRAP/scss/buttons";
@@ -45,9 +97,11 @@
 @import "../../BOOTSTRAP/scss/offcanvas";
 @import "../../BOOTSTRAP/scss/placeholders";
 
-// Helpers
-@import "../../BOOTSTRAP/scss/helpers";
 
-// Utilities
-@import "../../BOOTSTRAP/scss/utilities/api";
-// scss-docs-end import-stack
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
