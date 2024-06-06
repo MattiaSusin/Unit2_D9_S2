@@ -19,15 +19,6 @@ $grid-gutter-width: 0.5rem;
 // 4. Include any default map overrides here
 
 //-------------------------------------------ESERCIZIO 1----------------------------------------------------------------------//
-$font-sizes: (
-    1: 6rem,
-    2: 5rem,
-    3: 4rem,
-    4: 3rem,
-    5: 2rem,
-    6: 1rem,
-);
-
 $custom-font-sizes: (
     7: 0.875rem,
     8: 0.75rem,
@@ -39,31 +30,22 @@ $custom-font-sizes: (
 $font-sizes: map-merge($map1:$font-sizes , $map2:$custom-font-sizes);
 
 //-------------------------------------------ESERCIZIO 2----------------------------------------------------------------------//
-$border-with: (
-    1: 1px,
-    2: 2px,
-    3: 3px,
-    4: 4px,
-    5: 5px,
-
-);
-
-$custom-border-with: (
+$custom-border-widths: (
 
     6: 6px,
     7: 7px,
     8: 8px,
     9: 9px,
-    10: 10px,
+    10: 10px
 );
 
-$border-with : map-merge($map1:$border-with , $map2:$custom-border-with)
+$border-widths : map-merge($map1:$border-widths , $map2:$custom-border-widths);
 
 
 
 //-------------------------------------------ESERCIZIO 3----------------------------------------------------------------------//
 
-/* BOOTSTRAP */ ;
+/* BOOTSTRAP */
 
 //-------------------------------------------ESERCIZIO 4----------------------------------------------------------------------//
 
