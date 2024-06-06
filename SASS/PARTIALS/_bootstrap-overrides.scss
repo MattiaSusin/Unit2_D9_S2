@@ -51,6 +51,13 @@ $custom-border-with: (
 
 $border-with : map-merge($map1:$border-with , $map2: $custom-border-with)
 
+//-------------------------------------------ESERCIZIO 3----------------------------------------------------------------------//
+
+BOOTSTRAP 
+
+//-------------------------------------------ESERCIZIO 2----------------------------------------------------------------------//
+
+
 // 5. Include remainder of required parts
 @import "../../BOOTSTRAP/scss/maps";
 @import "../../BOOTSTRAP/scss/mixins";
