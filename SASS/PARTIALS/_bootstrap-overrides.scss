@@ -7,6 +7,11 @@
 $btn-padding-y: 0.75rem;
 $btn-padding-x: 2.5rem;
 
+$grid-gutter-width: 0.5rem; 
+//---------------------------------------------------------------------
+
+
+
 // 2. Include any default variable overrides here
 @import "../../BOOTSTRAP/scss/variables";
 @import "../../BOOTSTRAP/scss/variables-dark";
@@ -54,6 +59,8 @@ $custom-border-with: (
 
 $border-with : map-merge($map1:$border-with , $map2:$custom-border-with)
 
+
+
 //-------------------------------------------ESERCIZIO 3----------------------------------------------------------------------//
 
 /* BOOTSTRAP */ ;
@@ -79,6 +86,8 @@ $border-with : map-merge($map1:$border-with , $map2:$custom-border-with)
 @import "../../BOOTSTRAP/scss/containers";
 @import "../../BOOTSTRAP/scss/grid";
 @import "../../BOOTSTRAP/scss/helpers";
+
+
 
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in _utilities.scss
