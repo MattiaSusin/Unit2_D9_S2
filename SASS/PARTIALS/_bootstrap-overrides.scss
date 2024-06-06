@@ -27,11 +27,10 @@ $custom-font-sizes: (
 );
 
 
-$font-sizes: map-merge($map1: $font-sizes , $map2:$custom-font-sizes)
+$font-sizes: map-merge($map1:$font-sizes , $map2:$custom-font-sizes);
 
 //-------------------------------------------ESERCIZIO 2----------------------------------------------------------------------//
-$border-with:(
-
+$border-with: (
     1: 1px,
     2: 2px,
     3: 3px,
@@ -49,13 +48,15 @@ $custom-border-with: (
     10: 10px,
 );
 
-$border-with : map-merge($map1:$border-with , $map2: $custom-border-with)
+$border-with : map-merge($map1:$border-with , $map2:$custom-border-with)
 
 //-------------------------------------------ESERCIZIO 3----------------------------------------------------------------------//
 
-BOOTSTRAP 
+/* BOOTSTRAP */ ;
 
-//-------------------------------------------ESERCIZIO 2----------------------------------------------------------------------//
+//-------------------------------------------ESERCIZIO 4----------------------------------------------------------------------//
+
+
 
 
 // 5. Include remainder of required parts
